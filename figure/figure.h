@@ -9,6 +9,7 @@ class Figure
 public:
     virtual double Square();
     virtual double Perimeter();
+    virtual void out();
 };
 
 class Rectangle : public Figure
@@ -22,6 +23,7 @@ public:
     inline double Perimeter() { return (2 * width) + (2 * height); }
     inline int getWidth() { return width; }
     inline int getHeight() { return height; }
+    void out();
 };
 
 class Circle : public Figure
@@ -34,6 +36,7 @@ public:
     inline double Square() { return radius * radius * pi; }
     inline double Perimeter() { return 2 * radius * pi; }
     inline double getRadius() { return radius; }
+    void out();
 };
 
 class Triangle : public Figure
@@ -49,6 +52,7 @@ public:
     inline int getA() { return a; }
     inline int getB() { return b; }
     inline int getC() { return c; }
+    void out();
 };
 /*
 class Printer
