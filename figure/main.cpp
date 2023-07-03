@@ -11,7 +11,16 @@ int main()
 {
     // Инициализация фигур
     // Создаю массив из n Т, С, R
+    Figure *figures[] = {new Rectangle(10, 20), new Circle(15), new Triangle(10, 10, 10)};
+
+//    Figure f("fdfdfdf");
+
     // Вывод на экран
+    for(auto &figure : figures)
+    {
+        figure->out();
+        cout << endl;
+    }
 
     return 0;
 }
