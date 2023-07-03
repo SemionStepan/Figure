@@ -9,6 +9,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    // Инициализация фигур
+    // Создаю массив из n Т, С, R
+    // Вывод на экран
+
     return 0;
 }
